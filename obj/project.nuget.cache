@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hEmFZT5uSaQGDSc7czvYrqGgQtVHQl330a4x9PRaJcQSqR161dSfM7nqrgk0TjWyHBHk+meTRoNerZXse8qNzA==",
+  "dgSpecHash": "57ojaY7590qV7QCLUCOBfZIvqj07LeefzBipEFxlOvTZ8sRxJBoqqH16XqBx8XVGXvhWYW0ztYEpmCLAVUnhTg==",
   "success": true,
-  "projectFilePath": "/Users/huangshiwen/project/SSRWebApp/SSRWebApp.csproj",
+  "projectFilePath": "/Users/huangshiwen/project/test/SSRWebApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/huangshiwen/project/SSRWebApp/SSRWebApp.csproj",
+      "projectUniqueName": "/Users/huangshiwen/project/test/SSRWebApp.csproj",
       "projectName": "SSRWebApp",
-      "projectPath": "/Users/huangshiwen/project/SSRWebApp/SSRWebApp.csproj",
+      "projectPath": "/Users/huangshiwen/project/test/SSRWebApp.csproj",
       "packagesPath": "/Users/huangshiwen/.nuget/packages/",
-      "outputPath": "/Users/huangshiwen/project/SSRWebApp/obj/",
+      "outputPath": "/Users/huangshiwen/project/test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/huangshiwen/.nuget/NuGet/NuGet.Config"
