@@ -4,7 +4,32 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">My first github</a>.</p>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="my-4 text-center">會員註冊表單</h2>
+            <form id="registrationForm" action="javascript:void(0);">
+                <div class="mb-3">
+                    <label for="username" class="form-label">帳號</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label"> E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">密碼</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">註冊</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="result-container" id="resultContainer" style="display: none;">
+    <h4>填寫內容</h4>
+    <p><strong>帳號：</strong> <span id="resultUsername"></span></p>
+    <p><strong>E-mail：</strong> <span id="resultEmail"></span></p>
+    <p><strong>密碼：</strong> <span id="resultPassword"></span></p>
 </div>
