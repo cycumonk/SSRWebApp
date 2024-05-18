@@ -14,12 +14,15 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-        // 在此處初始化屬性等操作
+
     }
 
     public IActionResult OnPost()
     {
-        // 在此處處理表單提交
-        return RedirectToPage("/Success", new { account = Account, email = Email, password = Password });
+        if (ModelState.IsValid)
+        {
+            return RedirectToPage("Success", new { Account = Account, Email = Email, Password = Password });
+        }
+        return Page();
     }
 }
