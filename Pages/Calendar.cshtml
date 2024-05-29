@@ -1,0 +1,28 @@
+@page
+@model SSRWebApp.Pages.SuccessModel
+@{
+    ViewData["Title"] = "日曆";
+}
+
+<!DOCTYPE html>
+
+<body>
+    <div class="container">
+        <h2>Bootstrap Datepicker Example</h2>
+        <form class="form-group">
+            <label for="datepicker">Select Date</label>
+            <input type="text" class="form-control" id="datepicker">
+        </form>
+    </div>
+    <script>
+        $(document).ready(function() {
+            var today = new Date();
+            $('#datepicker').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true,
+                todayHighlight: true
+            }).datepicker('setDate', today);
+        });
+    </script>
+</body>
+</html>
