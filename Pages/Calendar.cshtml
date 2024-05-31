@@ -1,5 +1,5 @@
 @page
-@model SSRWebApp.Pages.SuccessModel
+@model CalendarModel
 @{
     ViewData["Title"] = "日曆";
 }
@@ -13,6 +13,10 @@
             <label for="datepicker">Select Date</label>
             <input type="text" class="form-control" id="datepicker">
         </form>
+        <div>
+            <h3>Person Information (Formatted JSON)</h3>
+            <pre>@Model.JsonData</pre>
+        </div>
     </div>
     <script>
         $(document).ready(function () {
