@@ -54,24 +54,19 @@ namespace SSRWebApp.Controllers
 
                 if (storedPassword == data.Password)
                 {
-                    return RedirectToPage("/LoginSuccess", new { account = data.Account });
-                }
-            }
-
-            if (storedPassword == data.Password)
-            {
-                var claims = new List<Claim>
+                    var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, data.Account)
             };
 
-                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity),
-                    new AuthenticationProperties
-                    {
-                        IsPersistent = true
-                    });
-                return RedirectToPage("/Index");
+                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity),
+                        new AuthenticationProperties
+                        {
+                            IsPersistent = true
+                        });
+                    return RedirectToPage("/Index");
+                }
             }
 
             TempData["ErrorMessage"] = "帳號或密碼錯誤";
