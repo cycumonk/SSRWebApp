@@ -12,7 +12,7 @@ namespace SSRWebApp.Pages
         [BindProperty]
         public string? Password { get; set; }
 
-        public void OnPost(string account, string email, string password)
+        public void OnGet(string account, string email, string password)
         {
             Account = account;
             Email = email;

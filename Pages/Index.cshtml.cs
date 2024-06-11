@@ -1,11 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using SSRWebApp.Models;
 
-public class IndexModel : PageModel
+namespace SSRWebApp.Pages
 {
-    public void OnGet()
+    public class IndexModel : PageModel
     {
-        // 無需邏輯，只是保持空方法
+        [BindProperty]
+        public UserModel User { get; set; }
+
+        public void OnGet()
+        {
+        }
     }
 
 }
